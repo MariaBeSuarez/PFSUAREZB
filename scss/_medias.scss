@@ -66,3 +66,43 @@
     width: 50%;
    }
 }
+@media (max-width: 600px){
+   .nav{
+      margin-right: 15px;
+      img {
+       width: 80%;
+       height: 110px;
+       ul {
+       list-style: none;
+       display: flex;
+       margin-right: 2px;
+       justify-content: flex-end;
+       li{
+        background-color: $neutroColor;
+        margin: 8px;
+        display: flex;
+        justify-content: flex-end;
+        a{
+         text-decoration: none;
+         color: $principalColor;
+         font-size: 1.2em;  
+         }
+         form {
+            margin: 8px;
+            display: flex;
+            justify-content: flex-end;
+            }
+         input{
+               border: none;
+               color: $principalColor;
+               button {
+                   border-radius: 3px;
+                   color: $principalColor;
+                   border: none;
+                }
+         }
+       }
+       }
+      }
+   }
+}

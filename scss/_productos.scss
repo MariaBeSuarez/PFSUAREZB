@@ -1,19 +1,105 @@
+.nav{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+  padding: 5px 15px;
+  width: 100%;
+  height:150px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+    img {
+    width: 110%;
+    height:125px;
+    display: flex;
+    justify-content: center;
+    }
+    ul {
+       list-style: none;
+       display: flex;
+       margin-right: 5px;
+       justify-content: flex-end;
+        li {
+        color: $principalColor;
+        margin: 8px;
+        display: flex;
+        justify-content: flex-end;
+        }
+            a{
+            text-decoration: none;
+            color: $principalColor;
+            font-size: 1.2em;  
+            }
+        form {
+        margin: 8px;
+        display: flex;
+        justify-content: flex-end;
+        }
+        input{
+        border: none;
+        color: $principalColor;
+         button {
+            border-radius: 3px;
+            color: $principalColor;
+            border: none;
+         }
+        }
+    }    
+}
+
 .productos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .productos img {
+    img {
         width: 100%;
         height: 300px;
         padding: 20px;
+        &:hover{font-weight: lighter;
+            padding:1.1px;
+            color: $neutroColor 
         }
+    }
 }
-.destacados {
+.destacados{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .destacados img {
+    img {
         width: 100%;
         height: 300px;
+        &:hover{font-weight: lighter;
+            padding:1.5px;
+            color: $neutroColor 
+        }
+    }
+}
+
+.navigator {
+    display: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+    ul{
+        display: center;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+        li{
+            display: center;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+        }
+    }
+    button{
+        border: none;
+        background-color: $principalColor;
+        width: 100%;
+        height: 30px
+    }
+    &:hover{font-weight: lighter;
+        font-weight: lighter;
+         padding:1.5px;
+         color: $neutroColor ;
+         cursor: pointer;
     }
 }

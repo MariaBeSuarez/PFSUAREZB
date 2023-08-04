@@ -2,7 +2,7 @@
 *{
     font-family: $mainFont;
     box-sizing: border-box;
-}
+
 
  h1,
  h2,
@@ -17,42 +17,64 @@
     font-family: $mainFont;
     font-size: $textRegular;
     font-weight: $texM;
-    background-color: $secondaryColor;
  }
 
  .logos {
     background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-    .logos article{
-     margin: 10px;
+    article{
+     margin: 30px;
      display: inline-flex;
      width: 30%;
-     background-color: $principalColor;
-     .logos article img{
-        width: 50%;
-        .logos article svg{
-            width: 50px;
-            height: 50px;
-            fill: $secondaryColor;
-            margin-right: 20px;
+    a{
+        width: 15%;
+        color: $principalColor;
+      img{
+        width: 70%;
+        svg{
+         width: 30px;
+         height: 30px;
+         
+         margin-right: 20px;
             &:hover{font-weight: lighter;
                 padding:1.5px;
                 color: $secondaryColor 
             }
         }
      }
-    }     
+    }    
   }
+ }
  
-   .presentacion img{
+.presentacion {
+      img{
             display: flex;
             width: 100%;
             height: 400px;
+            &scale:hover{
+        transform: scaleX(1.4);
+        cursor: pointer;
+        transition: all 2s;
+
     }
+    }
+}
     .container{
-            width: 100%;
+            width: 50%;
             height: auto;
-            margin: 10px auto;
-            padding: 5px 5px;
+            margin: 50px auto;
+            padding: 10px 5px;
+            img{
+                display: flex;
+                width: 100%;
+                height: 400px;
+                padding: 10px 5px;
+                &:hover{font-weight: lighter;
+                    padding:1.5px;
+                    color: $neutroColor 
+                }
+            }
+            
+
     }
     .consultas{
         margin-right: 30px;
@@ -67,21 +89,39 @@
         }
      }
      .contacto-form {
-        display: flex;
+        
         color: $principalColor;
        }
     .footer{
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+        color: $tercerColor;
     }
 
     a:hover {
          font-weight: lighter;
          padding:1.5px;
-         color: $secondaryColor 
-        }
+         color: $neutroColor ;
+         cursor: pointer;
+    }
    
     iframe{
         width: 100%;
         height: 200px;
     }
+    .scale:hover{
+        transform: scaleX(1.4);
+        cursor: pointer;
+        transition: all 2s;
+    }
+    .error-message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 100px);
+        width: 100%;
+
+    }
+}
