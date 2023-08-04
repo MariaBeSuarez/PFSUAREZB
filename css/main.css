@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.productos .productos img {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+.destacados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.destacados .destacados img {
+  width: 100%;
+  height: 300px;
+}
+
+.nav {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+  padding: 5px 15px;
+  width: 100%;
+  height: 150px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav img {
+  width: 110%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 5px;
+  justify-content: flex-end;
+}
+.nav ul li {
+  color: rgb(205, 14, 205);
+  margin: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav ul a {
+  text-decoration: none;
+  color: rgb(205, 14, 205);
+  font-size: 1.2em;
+}
+.nav ul form {
+  margin: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav ul input {
+  border: none;
+  color: rgb(205, 14, 205);
+}
+.nav ul input button {
+  border-radius: 3px;
+  color: rgb(205, 14, 205);
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .presentacion img {
+    width: 80%;
+    height: 200px;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 8px auto;
+    padding: 3px 3px;
+  }
+}
+@media (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    color: rgb(205, 14, 205);
+    margin: 5px 0;
+    font-weight: 0.6em;
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 600px) {
+  .destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .destacados img {
+    width: 80%;
+    height: 150px;
+  }
+  .productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .productos img {
+    width: 75%;
+    height: 100px;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .logos article {
+    margin: 7px;
+    width: 15%;
+  }
+  .logos article img {
+    width: 10%;
+  }
+  .logos article svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .consultas {
+    margin-right: 15px;
+  }
+  .consultas form {
+    margin: 30px;
+    width: 50%;
+  }
+}
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(205, 14, 205);
+  margin: 10px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 400;
+  font-weight: 1em;
+  background-color: deeppink;
+}
+
+.logos {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+}
+.logos .logos article {
+  margin: 10px;
+  display: inline-flex;
+  width: 30%;
+  background-color: rgb(205, 14, 205);
+}
+.logos .logos article .logos article img {
+  width: 50%;
+}
+.logos .logos article .logos article img .logos article svg {
+  width: 50px;
+  height: 50px;
+  fill: deeppink;
+  margin-right: 20px;
+}
+.logos .logos article .logos article img .logos article svg:hover {
+  font-weight: lighter;
+  padding: 1.5px;
+  color: deeppink;
+}
+
+.presentacion img {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 5px 5px;
+}
+
+.consultas {
+  margin-right: 30px;
+}
+.consultas .consultas form {
+  margin: 60px;
+  width: 100%;
+  border: none;
+}
+.consultas .consultas form .consultas form label {
+  display: block;
+  color: rgba(128, 128, 128, 0.615);
+}
+
+.contacto-form {
+  display: flex;
+  color: rgb(205, 14, 205);
+}
+
+.footer {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+  padding: 10px 30px;
+}
+
+a:hover {
+  font-weight: lighter;
+  padding: 1.5px;
+  color: deeppink;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+}
+
+/*# sourceMappingURL=main.css.map */

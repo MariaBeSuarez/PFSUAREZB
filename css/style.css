@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+ 
+  nav{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+  padding: 5px 15px;
+  width: 100%;
+  height:150px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  }
+   nav img {
+    width: 110%;
+    height:125px;
+    display: flex;
+    justify-content: center;
+    }
+    nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    justify-content: flex-end;
+    }
+    nav ul li {
+            margin: 8px;
+            display: flex;
+            justify-content: flex-end;
+    }
+    nav ul form {
+            margin: 8px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    nav ul li a{
+    text-decoration: none;
+    color: rgb(156, 22, 234) ;
+    font-size: 1.2em;
+    }
+    nav form input{
+    border: none;
+    color: blueviolet;
+    }
+    nav form button {
+    border-radius: 3px;
+    border: none;
+    }
+  @media (max-width: 600px) {
+    nav {
+      padding: 5px 10px;
+      width: 900%;
+      height:90px;
+         }
+    nav img {
+      width: 70%;
+      height:70px;
+      display: flex;
+      justify-content: center;
+    }
+   nav ul {
+    justify-content: center;
+     text-align: center;
+   }
+   nav ul li a{
+      text-decoration: none;
+      color: rgb(234, 22, 153) ;
+      font-size: 0.8em;
+   }
+   nav ul form {
+      margin: 2px;
+      display: flex;
+   }
+   nav form input{
+    border: none;
+    color: rgb(226, 43, 195);
+   }
+   nav form button {
+    border-radius: 1px;
+    }
+  }
+ .presentacion img{
+   display: flex;
+   width: 100%;
+   height: 400px;
+ }
+  .container{
+   width: 100%;
+   height: auto;
+   margin: 10px auto;
+   padding: 5px 5px;
+  }
+ @media (max-width: 600px){
+   .presentacion img{
+      width: 80%;
+      height: 200px;
+   }
+   .container{
+      width: 100%;
+      height: auto;
+      margin: 8px auto;
+      padding: 3px 3px;
+    }
+ }
+  h1,
+  h2,
+  h3{
+    color:  rgb(102, 10, 155);
+    margin: 10px 0;
+    font-weight: 1.5em;
+    text-align: center;
+  }
+  p{
+    color: grey;
+    line-height: 1.2em;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+  }
+  @media (max-width: 600px){
+    h1,
+    h2,
+    h3{
+     color:  rgb(102, 10, 155);
+     margin: 5px 0;
+     font-weight: 0.6em;
+     text-align: center;
+     font-size: 0.9em;
+   }
+   p{
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 0.9em;
+    text-align: center;
+   }
+  }
+ .destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ .destacados img {
+    width: 100%;
+    height: 300px;
+    }
+ .productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ .productos img {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    }
+
+ @media (max-width: 600px){
+   .destacados {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   .destacados img {
+      width: 80%;
+      height: 150px;
+      }
+   .productos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   .productos img {
+      width: 75%;
+      height: 100px;
+      padding: 10px;
+      }
+ }
+ .logos{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% )
+ }
+ .logos article{
+    margin: 10px;
+    display: inline-flex;
+    width: 30%;
+ }
+ .logos article img{
+       width: 50%;
+ }
+    .logos article svg{
+        width: 50px;
+        height: 50px;
+        fill: rgb(171, 12, 186);
+        margin-right: 20px;
+    }
+ @media (max-width: 600px) {
+   .logos article{
+    margin: 7px;
+    width: 15%;
+   }
+  .logos article img{
+   width: 10%;
+    }
+    .logos article svg{
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+   }
+ }
+ .consultas{
+        margin-right: 30px;
+    }
+    .consultas form{
+        margin: 60px;
+        width: 100%;
+        border: none;
+    }
+    .consultas form label{
+        display: block;
+        color: rgb(125, 66, 125);
+    }
+    @media (max-width: 600px){
+      .consultas{
+         margin-right: 15px;
+     }
+     .consultas form{
+      margin: 30px;
+      width: 50%;
+        }
+    }
+    iframe{
+      width: 100%;
+      height: 200px;
+    }
+
+    .footer{
+     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+     padding: 10px 30px;
+    }
+    .contacto-form {
+      display: flex;
+      color: blueviolet;
+     }
+    a:hover {
+      font-weight: lighter;
+      padding:1.5px;
+      color: rgb(23, 218, 240); 
+    }
+}

@@ -1,0 +1,87 @@
+//selectores comunes
+*{
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+
+ h1,
+ h2,
+ h3{
+  color: $principalColor;
+  margin: 10px 0;
+  font-weight: $textRegular;
+  text-align: center;
+ }
+
+ p{
+    font-family: $mainFont;
+    font-size: $textRegular;
+    font-weight: $texM;
+    background-color: $secondaryColor;
+ }
+
+ .logos {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+    .logos article{
+     margin: 10px;
+     display: inline-flex;
+     width: 30%;
+     background-color: $principalColor;
+     .logos article img{
+        width: 50%;
+        .logos article svg{
+            width: 50px;
+            height: 50px;
+            fill: $secondaryColor;
+            margin-right: 20px;
+            &:hover{font-weight: lighter;
+                padding:1.5px;
+                color: $secondaryColor 
+            }
+        }
+     }
+    }     
+  }
+ 
+   .presentacion img{
+            display: flex;
+            width: 100%;
+            height: 400px;
+    }
+    .container{
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+            padding: 5px 5px;
+    }
+    .consultas{
+        margin-right: 30px;
+        .consultas form{
+            margin: 60px;
+            width: 100%;
+            border: none;
+            .consultas form label{
+                display: block;
+                color: $neutroColor;
+            }
+        }
+     }
+     .contacto-form {
+        display: flex;
+        color: $principalColor;
+       }
+    .footer{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+        padding: 10px 30px;
+    }
+
+    a:hover {
+         font-weight: lighter;
+         padding:1.5px;
+         color: $secondaryColor 
+        }
+   
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
