@@ -1,7 +1,8 @@
 #error404{
     background-image: url(../imagenes/iconos/error404.jpeg);
     width: 100%;
-    height: auto;
+    height: 300px;
     display: flex;
-    background-size: cover;
-    }
+    flex-direction: row;
+    align-content: stretch;
+}

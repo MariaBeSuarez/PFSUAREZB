@@ -1,108 +1,149 @@
 
 @media (max-width: 600px){
-    .presentacion img{
-       width: 80%;
-       height: 200px;
-    }
-    .container{
-       width: 100%;
-       height: auto;
-       margin: 8px auto;
+   .presentacion img{
+    width: 30%;
+    height: 60px;
+      .container{
+       width: 70%;
+       height: 100%;
+       margin: 5px auto;
        padding: 3px 3px;
-     }
-}
-@media (max-width: 600px){
-     h1,
-     h2,
-     h3{
-      color:  $principalColor;
-      margin: 5px 0;
-      font-weight: 0.6em;
-      text-align: center;
-      font-size: 0.9em;
-    }
-}
-@media (max-width: 600px){
-    .destacados {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-    }
-    .destacados img {
-       width: 80%;
-       height: 150px;
-       }
-    .productos{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-    }
-    .productos img {
-       width: 75%;
-       height: 100px;
-       padding: 10px;
-       }
-}       
-@media (max-width: 600px){
-    .logos article{
-     margin: 7px;
-     width: 15%;
-    }
-   .logos article img{
-    width: 10%;
-     }
-     .logos article svg{
-       width: 25px;
-       height: 25px;
-       margin-right: 10px;
-    }
-}
-@media (max-width: 600px){
-    .consultas{
-       margin-right: 15px;
-     }
-    .consultas form{
-    margin: 30px;
-    width: 50%;
+      }
    }
 }
+
+@media (max-width: 600px){
+   h1,
+   h2,
+   h3{
+    color:  $principalColor;
+     margin: 6px 0;
+    font-weight: 0.6em;
+    text-align: center;
+    font-size: 0.8em;
+   }
+}
+
+@media (max-width: 600px){
+   .destacados {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .destacados img {
+         width: 80%;
+         height: 150px;
+         padding: 5px;
+      }
+   }
+   .productos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .productos img {
+       width: 80%;
+       height: 100px;
+       padding: 5px;
+      }
+   }
+   .button{
+      .type{
+       width: 50%;
+       height: 50px;
+       padding: 5px;
+      }
+   }
+}       
+
+@media (max-width: 600px){
+   .logos article{
+    margin: 7px;
+    width: 15%;
+      .logos article svg{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+   }
+}
+
+@media (max-width: 600px){
+   .consultas{
+    margin-right: 10px;
+     .consultas form{
+       margin: 20px;
+       width: 20%;
+       border: none;
+       .consultas form label{
+          display: block;
+          color: $neutroColor;
+         }
+      }
+   }
+}
+
 @media (max-width: 600px){
    .nav{
-      margin-right: 15px;
-      img {
-       width: 80%;
-       height: 110px;
-       ul {
-       list-style: none;
-       display: flex;
-       margin-right: 2px;
-       justify-content: flex-end;
-       li{
-        background-color: $neutroColor;
-        margin: 8px;
-        display: flex;
-        justify-content: flex-end;
-        a{
-         text-decoration: none;
-         color: $principalColor;
-         font-size: 1.2em;  
+      padding: 3px 10px;
+      width: 50%;
+      height:70px;
+      position: sticky;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;  
+      div {
+         ul {
+          list-style: none;
+          margin-right: 2px;
+          display: flex;
+          flex-direction:column;
+          justify-content: center;
+          color: beige;
+          border-bottom: 2px;
+          li{
+             color: $principalColor;
+             margin: 5px;
+             display: flex;
+             flex-direction:column;
+             justify-content: center;
+               a{
+                color: $principalColor;
+                font-size: 0.8em;  
+               }
+               form {
+                  margin: 5px;
+                  display: flex;
+                  justify-content: flex-end;
+                  input{
+                   background-color:  $secondaryColor;
+                   button {
+                      border-radius: 2px;
+                      color: $secondaryColor;
+                      border: none;
+                     }
+                  }
+               }    
+            }  
          }
-         form {
-            margin: 8px;
-            display: flex;
-            justify-content: flex-end;
-            }
-         input{
-               border: none;
-               color: $principalColor;
-               button {
-                   border-radius: 3px;
-                   color: $principalColor;
-                   border: none;
-                }
-         }
-       }
-       }
-      }
+      }    
+   }
+}
+
+@media (max-width: 600px) {
+   footer{
+    background-color: $secondaryColor;    
+     p{
+       background-color: $principalColor;
+       margin: 30px;
+       font-weight: $texLigth;      
+     }
+   }
+}
+
+@media (max-width: 600px) {
+  .iframe{
+    width: 20%;
+    height: 50px;
    }
 }
