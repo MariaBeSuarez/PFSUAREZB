@@ -16,11 +16,12 @@
    h1,
    h2,
    h3{
-    color:  $principalColor;
-     margin: 6px 0;
-    font-weight: 0.6em;
+    font-family:$mainFont;
+    color:$principalColor;
+    margin: 8px 0;
+    font-weight: 1.0em;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.2em;
    }
 }
 
@@ -55,15 +56,31 @@
 }       
 
 @media (max-width: 600px){
-   .logos article{
-    margin: 7px;
-    width: 15%;
-      .logos article svg{
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-      }
-   }
+   .logos {
+      background-image:radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+      article{
+        margin:20px;
+        display:inline-flex;
+        width:20%;
+        a{
+           width:10%;
+           color:$principalColor;
+          img{
+             width:30%;
+               svg{
+                width:20px;
+                height:20px;
+                margin-right:15px;
+                &:hover{
+                   font-weight:lighter;
+                   padding:1.5px;
+                   color:$secondaryColor 
+                  }
+               }   
+            }    
+         }      
+       } 
+   }    
 }
 
 @media (max-width: 600px){
@@ -83,31 +100,29 @@
 
 @media (max-width: 600px){
    .nav{
+      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
       padding: 3px 10px;
-      width: 50%;
-      height:70px;
+      width: 100%;
+      height:150px;
       position: sticky;
       left: 0;
       top: 0;
       display: flex;
-      flex-direction:column;
+      flex-direction:row;
       justify-content: center;  
       div {
          ul {
-          list-style: none;
-          margin-right: 2px;
-          display: flex;
-          flex-direction:column;
-          justify-content: center;
-          color: beige;
-          border-bottom: 2px;
-          li{
+            list-style: none;
+            display: flex;
+            margin-right: 3px;
+            justify-content: center;
+            li{
              color: $principalColor;
              margin: 5px;
              display: flex;
-             flex-direction:column;
              justify-content: center;
                a{
+                text-decoration: none;
                 color: $principalColor;
                 font-size: 0.8em;  
                }
@@ -132,18 +147,18 @@
 
 @media (max-width: 600px) {
    footer{
-    background-color: $secondaryColor;    
-     p{
-       background-color: $principalColor;
-       margin: 30px;
-       font-weight: $texLigth;      
+      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+    p{
+       margin: 50px;
+       font-weight: $textRegular;
+       text-align: center;
      }
-   }
+  }
 }
 
 @media (max-width: 600px) {
   .iframe{
-    width: 20%;
-    height: 50px;
+    width: 80%;
+    height: 150px;
    }
 }

@@ -63,7 +63,7 @@
 .productos img:hover {
   font-weight: lighter;
   padding: 1.1px;
-  color: rgba(128, 128, 128, 0.615);
+  color: rgb(205, 14, 205);
 }
 
 .destacados {
@@ -121,43 +121,43 @@
   flex-direction: row;
   justify-content: center;
 }
-.nav a {
+.nav div a {
   display: flex;
   justify-content: flex-start;
   align-self: center;
 }
-.nav a img {
-  width: 90%;
+.nav div a img {
+  width: 100%;
   height: 100px;
   justify-content: flex-start;
 }
-.nav ul {
+.nav div ul {
   list-style: none;
   display: flex;
   margin-right: 5px;
   justify-content: center;
 }
-.nav ul li {
+.nav div ul li {
   color: rgb(205, 14, 205);
   margin: 8px;
   display: flex;
   justify-content: center;
 }
-.nav ul a {
+.nav div ul a {
   text-decoration: none;
   color: rgb(205, 14, 205);
   font-size: 1.2em;
 }
-.nav ul form {
+.nav div ul form {
   margin: 8px;
   display: flex;
   justify-content: flex-end;
 }
-.nav ul input {
+.nav div ul input {
   border: none;
   color: rgb(205, 14, 205);
 }
-.nav ul input button {
+.nav div ul input button {
   border-radius: 3px;
   color: rgb(205, 14, 205);
   border: none;
@@ -165,13 +165,13 @@
 
 @media (max-width: 600px) {
   .presentacion img {
-    width: 80%;
-    height: 200px;
+    width: 30%;
+    height: 60px;
   }
-  .container {
-    width: 100%;
-    height: auto;
-    margin: 8px auto;
+  .presentacion img .container {
+    width: 70%;
+    height: 100%;
+    margin: 5px auto;
     padding: 3px 3px;
   }
 }
@@ -179,11 +179,12 @@
   h1,
   h2,
   h3 {
+    font-family: "Quicksand", sans-serif;
     color: rgb(205, 14, 205);
-    margin: 5px 0;
-    font-weight: 0.6em;
+    margin: 8px 0;
+    font-weight: 1em;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
 }
 @media (max-width: 600px) {
@@ -192,90 +193,135 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .destacados img {
+  .destacados .destacados img {
     width: 80%;
     height: 150px;
+    padding: 5px;
   }
   .productos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .productos img {
-    width: 75%;
+  .productos .productos img {
+    width: 80%;
     height: 100px;
-    padding: 10px;
+    padding: 5px;
+  }
+  .button .type {
+    width: 50%;
+    height: 50px;
+    padding: 5px;
   }
 }
 @media (max-width: 600px) {
+  .logos {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+  }
   .logos article {
-    margin: 7px;
-    width: 15%;
+    margin: 20px;
+    display: inline-flex;
+    width: 20%;
   }
-  .logos article img {
+  .logos article a {
     width: 10%;
+    color: rgb(205, 14, 205);
   }
-  .logos article svg {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+  .logos article a img {
+    width: 30%;
+  }
+  .logos article a img svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+  .logos article a img svg:hover {
+    font-weight: lighter;
+    padding: 1.5px;
+    color: deeppink;
   }
 }
 @media (max-width: 600px) {
   .consultas {
-    margin-right: 15px;
+    margin-right: 10px;
   }
-  .consultas form {
-    margin: 30px;
-    width: 50%;
+  .consultas .consultas form {
+    margin: 20px;
+    width: 20%;
+    border: none;
+  }
+  .consultas .consultas form .consultas form label {
+    display: block;
+    color: rgba(128, 128, 128, 0.615);
   }
 }
 @media (max-width: 600px) {
   .nav {
-    margin-right: 15px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+    padding: 3px 10px;
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-  .nav img {
-    width: 80%;
-    height: 110px;
-  }
-  .nav img ul {
+  .nav div ul {
     list-style: none;
     display: flex;
-    margin-right: 2px;
-    justify-content: flex-end;
+    margin-right: 3px;
+    justify-content: center;
   }
-  .nav img ul li {
-    background-color: rgba(128, 128, 128, 0.615);
-    margin: 8px;
+  .nav div ul li {
+    color: rgb(205, 14, 205);
+    margin: 5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
-  .nav img ul li a {
+  .nav div ul li a {
     text-decoration: none;
     color: rgb(205, 14, 205);
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
-  .nav img ul li form {
-    margin: 8px;
+  .nav div ul li form {
+    margin: 5px;
     display: flex;
     justify-content: flex-end;
   }
-  .nav img ul li input {
-    border: none;
-    color: rgb(205, 14, 205);
+  .nav div ul li form input {
+    background-color: deeppink;
   }
-  .nav img ul li input button {
-    border-radius: 3px;
-    color: rgb(205, 14, 205);
+  .nav div ul li form input button {
+    border-radius: 2px;
+    color: deeppink;
     border: none;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+  }
+  footer p {
+    margin: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .iframe {
+    width: 80%;
+    height: 150px;
   }
 }
 #error404 {
   background-image: url(../imagenes/iconos/error404.jpeg);
   width: 100%;
-  height: auto;
+  height: 300px;
   display: flex;
-  background-size: cover;
+  flex-direction: row;
+  align-content: stretch;
 }
 
 * {
@@ -285,6 +331,7 @@
 * h1,
 * h2,
 * h3 {
+  font-family: "Quicksand", sans-serif;
   color: rgb(205, 14, 205);
   margin: 10px 0;
   font-weight: 400;
@@ -304,16 +351,16 @@
   width: 30%;
 }
 * .logos article a {
-  width: 15%;
+  width: 10%;
   color: rgb(205, 14, 205);
 }
 * .logos article a img {
-  width: 70%;
+  width: 30%;
 }
 * .logos article a img svg {
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
 }
 * .logos article a img svg:hover {
   font-weight: lighter;
@@ -362,11 +409,13 @@
 * .contacto-form {
   color: rgb(205, 14, 205);
 }
-* .footer {
-  display: flex;
-  align-items: center;
-  min-height: 100px;
-  color: orange;
+* footer {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
+}
+* footer p {
+  margin: 50px;
+  font-weight: 400;
+  text-align: center;
 }
 * a:hover {
   font-weight: lighter;
