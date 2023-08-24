@@ -3,7 +3,6 @@
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
   padding: 5px 15px;
   width: 100%;
-  height: 150px;
   position: sticky;
   left: 0;
   top: 0;
@@ -55,12 +54,12 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.productos img {
+.productos div img {
   width: 100%;
   height: 300px;
   padding: 20px;
 }
-.productos img:hover {
+.productos div img:hover {
   font-weight: lighter;
   padding: 1.1px;
   color: rgb(205, 14, 205);
@@ -71,11 +70,11 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.destacados img {
+.destacados div img {
   width: 100%;
   height: 300px;
 }
-.destacados img:hover {
+.destacados div img:hover {
   font-weight: lighter;
   padding: 1.5px;
   color: rgba(128, 128, 128, 0.615);
@@ -113,7 +112,6 @@
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
   padding: 5px 15px;
   width: 100%;
-  height: 150px;
   position: sticky;
   left: 0;
   top: 0;
@@ -128,7 +126,6 @@
 }
 .nav div a img {
   width: 100%;
-  height: 100px;
   justify-content: flex-start;
 }
 .nav div ul {
@@ -193,20 +190,29 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .destacados .destacados img {
-    width: 80%;
-    height: 150px;
-    padding: 5px;
+  .destacados div img {
+    width: 90%;
+    height: 120px;
+  }
+  .destacados div img:hover {
+    font-weight: lighter;
+    padding: 1.5px;
+    color: rgba(128, 128, 128, 0.615);
   }
   .productos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .productos .productos img {
-    width: 80%;
-    height: 100px;
-    padding: 5px;
+  .productos div img {
+    width: 90%;
+    height: 120px;
+    padding: 10px;
+  }
+  .productos div img:hover {
+    font-weight: lighter;
+    padding: 1.1px;
+    color: rgb(205, 14, 205);
   }
   .button .type {
     width: 50%;
@@ -251,7 +257,7 @@
     border: none;
   }
   .consultas .consultas form .consultas form label {
-    display: block;
+    display: flex;
     color: rgba(128, 128, 128, 0.615);
   }
 }
@@ -260,7 +266,6 @@
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 214, 171) 0%, rgb(255, 182, 182) 90%);
     padding: 3px 10px;
     width: 100%;
-    height: 150px;
     position: sticky;
     left: 0;
     top: 0;
@@ -318,7 +323,6 @@
 #error404 {
   background-image: url(../imagenes/iconos/error404.jpeg);
   width: 100%;
-  height: 300px;
   display: flex;
   flex-direction: row;
   align-content: stretch;
@@ -425,7 +429,7 @@
 }
 * iframe {
   width: 100%;
-  height: 200px;
+  height: 20git0px;
 }
 * .scale:hover {
   transform: scaleX(1.4);
