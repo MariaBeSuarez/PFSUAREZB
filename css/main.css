@@ -239,7 +239,7 @@ button {
   }
   .destacados div img {
     width: 90%;
-    height: 120px;
+    height: 100px;
   }
   .destacados div img:hover {
     font-weight: lighter;
@@ -253,7 +253,7 @@ button {
   }
   .productos div img {
     width: 80%;
-    height: 100px;
+    height: 90px;
     padding: 10px;
   }
   .productos div img:hover {
