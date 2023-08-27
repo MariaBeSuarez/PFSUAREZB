@@ -1,9 +1,8 @@
-
 @media (max-width: 600px){
-   .presentacion img{
-    width: 30%;
-    height: 60px;
-      .container{
+  .presentacion img{
+     width: 30%;
+     height: 60px;
+    .container{
        width: 70%;
        height: 100%;
        margin: 5px auto;
@@ -11,11 +10,10 @@
       }
    }
 }
-
 @media (max-width: 600px){
-   h1,
-   h2,
-   h3{
+  h1,
+  h2,
+  h3{
     font-family:$mainFont;
     color:$principalColor;
     margin: 8px 0;
@@ -23,83 +21,93 @@
     text-align: center;
     font-size: 1.2em;
    }
+ p{   
+    font-family:$mainFont;
+    color:$secondaryColor;
+    margin: 5px 0;
+    font-weight: 0.9em;
+    text-align: center;
+    font-size: 0.8em;
+   }
 }
-
 @media (max-width: 600px){
-   .destacados {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      div {
-         img {
-            width: 90%;
-            height: 120px;
-            &:hover{font-weight: lighter;
-               padding:1.5px;
-               color: $neutroColor 
+  .destacados {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     div {
+        img {
+           width: 90%;
+           height: 120px;
+           &:hover{font-weight: lighter;
+              padding:1.5px;
+              color: $neutroColor 
             }
          }
       }
    }
    .productos{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
       div {
          img {
-            width: 90%;
-            height: 120px;
-            padding: 10px;
-            &:hover{
-               font-weight: lighter;
-               padding:1.1px;
-               color: $principalColor 
-           }
+           width: 80%;
+           height: 100px;
+           padding: 10px;
+           &:hover{
+             font-weight: lighter;
+             padding:1.1px;
+             color: $principalColor 
+            } 
+           figcaption{   
+             font-family:$mainFont;
+             color:$principalColor;
+             margin: 5px 0;
+             font-weight: 0.8em;
+             text-align: center;
+             font-size: 0.8em;
+            } 
          }
-
+         button{
+          width: 90%;         
+          font-family:$mainFont;
+          color:$neutroColor;           
+          font-size: 0.7em;                                       
+         }
       }
-   }
-   
-   .button{
-      .type{
-       width: 50%;
-       height: 50px;
-       padding: 5px;
-      }
-   }
-}       
-
+   } 
+}     
 @media (max-width: 600px){
-   .logos {
-      background-image:radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-      article{
-        margin:20px;
-        display:inline-flex;
-        width:20%;
-        a{
-           width:10%;
-           color:$principalColor;
+  .logos {
+     background-image:radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+     article{
+       margin:20px;
+       display:inline-flex;
+       width:30%;
+       a{
+          width:10%;
+          color:$principalColor;
           img{
-             width:30%;
-               svg{
+             width:40%;
+              svg{
                 width:20px;
                 height:20px;
-                margin-right:15px;
+                margin-right:15px;                
                 &:hover{
-                   font-weight:lighter;
-                   padding:1.5px;
-                   color:$secondaryColor 
-                  }
+                font-weight:lighter;
+                padding:1.5px;
+                color:$secondaryColor 
+                }
                }   
-            }    
+           }    
          }      
-       } 
-   }    
+     } 
+   }   
 }
-
 @media (max-width: 600px){
-   .consultas{
-    margin-right: 10px;
+  .consultas{
+     margin-right: 10px;
      .consultas form{
        margin: 20px;
        width: 20%;
@@ -111,45 +119,50 @@
       }
    }
 }
-
 @media (max-width: 600px){
    .nav{
-      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-      padding: 3px 10px;
-      width: 100%;  
-      position: sticky;
-      left: 0;
-      top: 0;
-      display: flex;
-      flex-direction:row;
-      justify-content: center;  
-      div {
-         ul {
-            list-style: none;
-            display: flex;
-            margin-right: 3px;
-            justify-content: center;
-            li{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+    padding: 3px 10px;
+    width: 100%;  
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;  
+     img{
+       width: 100%; 
+       height:95px;   
+       display: flex;
+       justify-content: center;
+      }
+     div {
+       ul {
+          list-style: none;
+          display: flex;
+          margin-right: 3px;
+          justify-content: center;
+           li{
              color: $principalColor;
              margin: 5px;
              display: flex;
              justify-content: center;
-               a{
+              a{
                 text-decoration: none;
                 color: $principalColor;
-                font-size: 0.8em;  
+                font-size: 1em;  
                }
                form {
-                  margin: 5px;
-                  display: flex;
-                  justify-content: flex-end;
-                  input{
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                 input{
                    background-color:  $secondaryColor;
-                   button {
-                      border-radius: 2px;
-                      color: $secondaryColor;
-                      border: none;
-                     }
+                   button {                     
+                   border-radius: 3px;
+                   color: $principalColor;
+                   border: none;
+                   }
                   }
                }    
             }  
@@ -157,21 +170,19 @@
       }    
    }
 }
-
 @media (max-width: 600px) {
-   footer{
-      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+  footer{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
     p{
-       margin: 50px;
-       font-weight: $textRegular;
-       text-align: center;
+      margin: 50px;
+      font-weight: $textRegular;
+      text-align: center;
      }
   }
 }
-
 @media (max-width: 600px) {
-  .iframe{
-    width: 80%;
-    height: 150px;
-   }
+ .iframe{
+   width: 80%;
+   height: 150px;
+ }
 }

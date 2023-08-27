@@ -9,28 +9,28 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-    img {
+   img {
     width: 110%;
     height:125px;
     display: flex;
     justify-content: center;
     }
     ul {
-       list-style: none;
+      list-style: none;
+      display: flex;
+      margin-right: 5px;
+      justify-content: flex-end;
+       li {
+       color: $principalColor;
+       margin: 8px;
        display: flex;
-       margin-right: 5px;
        justify-content: flex-end;
-        li {
-        color: $principalColor;
-        margin: 8px;
-        display: flex;
-        justify-content: flex-end;
         }
-            a{
-            text-decoration: none;
-            color: $principalColor;
-            font-size: 1.2em;  
-            }
+       a{
+        text-decoration: none;
+        color: $principalColor;
+        font-size: 1.2em;  
+        }
         form {
         margin: 8px;
         display: flex;
@@ -40,73 +40,105 @@
         border: none;
         color: $principalColor;
          button {
-            border-radius: 3px;
-            color: $principalColor;
-            border: none;
+         border-radius: 3px;
+         color: $principalColor;
+         border: none;
+         }
+        }
+    }   
+}
+p{   
+ font-family:$mainFont;
+ color:$principalColor;
+ margin: 8px 0;
+ font-weight: 1.0em;
+ text-align: center;
+ font-size:1.2em;
+ }
+.productos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+   div {
+     img {
+         width: 80%;
+         height: 200px;
+         padding: 20px;
+          &:hover{
+            font-weight: lighter;
+            padding:1.1px;
+            color: $principalColor 
+          }
+        }
+        p{   
+         font-family:$mainFont;
+         color:$secondaryColor;
+         margin: 8px 0;
+         font-weight: 1.0em;
+         text-align: center;
+         font-size: 0.9em;
+         }
+         figcaption{   
+         font-family:$mainFont;
+         color:$principalColor;
+         margin: 8px 0;
+         font-weight: 1.0em;
+         text-align: center;
+         font-size: 1.2em;
+         }         
+         button{
+         width: 90%;         
+         font-family:$mainFont;
+         color:$neutroColor;           
+         font-size: 0.9em; 
+         text-align: center;                                      
+         }
+    }
+}
+button{
+ width: 100%;         
+ font-family:$mainFont;               
+ font-size: 0.9em; 
+ text-align: center;                                      
+ }
+.destacados{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+   div {
+     img {
+       width: 90%;
+       height: 200px;
+         &:hover{font-weight: lighter;
+            padding:1.5px;
+            color: $neutroColor 
          }
         }
     }    
 }
-
-.productos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    div {
-        img {
-            width: 100%;
-            height: 300px;
-            padding: 20px;
-            &:hover{
-                font-weight: lighter;
-                padding:1.1px;
-                color: $principalColor 
-            }
-        }
-    }
-}
-
-.destacados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    div {
-        img {
-            width: 100%;
-            height: 300px;
-            &:hover{font-weight: lighter;
-                padding:1.5px;
-                color: $neutroColor 
-            }
-        }
-
-    }
-    
-}
-
 .navigator {
-    display: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-    ul{
+   display: center;
+   flex-direction: row;
+   justify-content: flex-end;
+   background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+   ul{
+     display: center;
+     background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
+      li{
         display: center;
         background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-        li{
-            display: center;
-            background-image: radial-gradient(circle farthest-corner at 10% 20%,  rgba(255,214,171,1) 0%, rgba(255,182,182,1) 90% );
-        }
+       }
+   }
+   button{
+     border: none;
+     background-color: $principalColor;
+     width: 100%;
+     height: 30px
     }
-    button{
-        border: none;
-        background-color: $principalColor;
-        width: 100%;
-        height: 30px
-    }
-    &:hover{font-weight: lighter;
-        font-weight: lighter;
-         padding:1.5px;
-         color: $neutroColor ;
-         cursor: pointer;
+     &:hover{font-weight: lighter;
+       font-weight: lighter;
+        padding:1.5px;
+        color: $neutroColor ;
+        cursor: pointer;
     }
 }

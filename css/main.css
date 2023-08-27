@@ -49,20 +49,59 @@
   border: none;
 }
 
+p {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(205, 14, 205);
+  margin: 8px 0;
+  font-weight: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 .productos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 .productos div img {
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  height: 200px;
   padding: 20px;
 }
 .productos div img:hover {
   font-weight: lighter;
   padding: 1.1px;
   color: rgb(205, 14, 205);
+}
+.productos div p {
+  font-family: "Quicksand", sans-serif;
+  color: deeppink;
+  margin: 8px 0;
+  font-weight: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+.productos div figcaption {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(205, 14, 205);
+  margin: 8px 0;
+  font-weight: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.productos div button {
+  width: 90%;
+  font-family: "Quicksand", sans-serif;
+  color: rgba(128, 128, 128, 0.615);
+  font-size: 0.9em;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 .destacados {
@@ -71,8 +110,8 @@
   justify-content: space-around;
 }
 .destacados div img {
-  width: 100%;
-  height: 300px;
+  width: 90%;
+  height: 200px;
 }
 .destacados div img:hover {
   font-weight: lighter;
@@ -183,6 +222,14 @@
     text-align: center;
     font-size: 1.2em;
   }
+  p {
+    font-family: "Quicksand", sans-serif;
+    color: deeppink;
+    margin: 5px 0;
+    font-weight: 0.9em;
+    text-align: center;
+    font-size: 0.8em;
+  }
 }
 @media (max-width: 600px) {
   .destacados {
@@ -205,8 +252,8 @@
     justify-content: space-around;
   }
   .productos div img {
-    width: 90%;
-    height: 120px;
+    width: 80%;
+    height: 100px;
     padding: 10px;
   }
   .productos div img:hover {
@@ -214,10 +261,19 @@
     padding: 1.1px;
     color: rgb(205, 14, 205);
   }
-  .button .type {
-    width: 50%;
-    height: 50px;
-    padding: 5px;
+  .productos div img figcaption {
+    font-family: "Quicksand", sans-serif;
+    color: rgb(205, 14, 205);
+    margin: 5px 0;
+    font-weight: 0.8em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .productos div button {
+    width: 90%;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(128, 128, 128, 0.615);
+    font-size: 0.7em;
   }
 }
 @media (max-width: 600px) {
@@ -227,14 +283,14 @@
   .logos article {
     margin: 20px;
     display: inline-flex;
-    width: 20%;
+    width: 30%;
   }
   .logos article a {
     width: 10%;
     color: rgb(205, 14, 205);
   }
   .logos article a img {
-    width: 30%;
+    width: 40%;
   }
   .logos article a img svg {
     width: 20px;
@@ -273,6 +329,12 @@
     flex-direction: row;
     justify-content: center;
   }
+  .nav img {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+  }
   .nav div ul {
     list-style: none;
     display: flex;
@@ -288,19 +350,19 @@
   .nav div ul li a {
     text-decoration: none;
     color: rgb(205, 14, 205);
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .nav div ul li form {
-    margin: 5px;
+    margin: 15px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .nav div ul li form input {
     background-color: deeppink;
   }
   .nav div ul li form input button {
-    border-radius: 2px;
-    color: deeppink;
+    border-radius: 3px;
+    color: rgb(205, 14, 205);
     border: none;
   }
 }
@@ -325,7 +387,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-content: stretch;
+  align-content: flex-start;
 }
 
 * {
@@ -429,7 +491,7 @@
 }
 * iframe {
   width: 100%;
-  height: 20git0px;
+  height: 200px;
 }
 * .scale:hover {
   transform: scaleX(1.4);
