@@ -57,6 +57,9 @@
     height:auto;
     margin:50px auto;
     padding:10px 5px;
+    display:flex; 
+    flex-direction:column; 
+    align-items:center;
     img{
       display:flex;
       width:100%;

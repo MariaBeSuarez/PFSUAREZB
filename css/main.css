@@ -68,6 +68,7 @@ p {
 .productos div {
   margin: 5px auto;
   text-align: center;
+  width: 300px;
 }
 .productos div img {
   width: 80%;
@@ -382,14 +383,8 @@ button {
 #error404 {
   background-image: url(../imagenes/iconos/error404.jpeg);
   display: flex;
-  margin: 5px auto;
-}
-#error404 div img {
-  display: inline-flex;
-  margin: 5px auto;
-}
-#error404 div a {
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 * {
@@ -450,6 +445,9 @@ button {
   height: auto;
   margin: 50px auto;
   padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 * .container img {
   display: flex;
