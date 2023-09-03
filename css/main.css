@@ -59,9 +59,13 @@ p {
 }
 
 .productos {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+}
+.productos div {
+  margin: 5px auto;
+  text-align: center;
 }
 .productos div img {
   width: 80%;
@@ -108,6 +112,9 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.destacados div {
+  margin: 5px auto;
 }
 .destacados div img {
   width: 90%;
@@ -236,10 +243,15 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 5px auto;
+  }
+  .destacados div {
+    margin: 5px auto;
   }
   .destacados div img {
-    width: 90%;
-    height: 100px;
+    width: 95%;
+    height: 70px;
+    border: none;
   }
   .destacados div img:hover {
     font-weight: lighter;
@@ -247,18 +259,20 @@ button {
     color: rgba(128, 128, 128, 0.615);
   }
   .productos {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     justify-content: space-around;
   }
+  .productos div {
+    margin: 5px auto;
+  }
   .productos div img {
-    width: 80%;
-    height: 90px;
-    padding: 10px;
+    width: 75%;
+    border: none;
   }
   .productos div img:hover {
     font-weight: lighter;
-    padding: 1.1px;
+    padding: 1.5px;
     color: rgb(205, 14, 205);
   }
   .productos div img figcaption {
@@ -283,18 +297,18 @@ button {
   .logos article {
     margin: 20px;
     display: inline-flex;
-    width: 30%;
+    width: 50%;
   }
   .logos article a {
-    width: 10%;
+    width: 20%;
     color: rgb(205, 14, 205);
   }
   .logos article a img {
-    width: 40%;
+    width: 50%;
   }
   .logos article a img svg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 15px;
   }
   .logos article a img svg:hover {
@@ -382,17 +396,35 @@ button {
     height: 150px;
   }
 }
+@media (max-width: 600px) {
+  .error404 {
+    margin: 5px auto;
+  }
+  .error404 div img {
+    width: 50%;
+    border: none;
+  }
+  .error404 div a {
+    text-align: center;
+  }
+}
 #error404 {
   background-image: url(../imagenes/iconos/error404.jpeg);
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-content: flex-start;
+  margin: 5px auto;
+}
+#error404 div img {
+  display: inline-flex;
+  margin: 5px auto;
+}
+#error404 div a {
+  text-align: center;
 }
 
 * {
   font-family: "Quicksand", sans-serif;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 * h1,
 * h2,
