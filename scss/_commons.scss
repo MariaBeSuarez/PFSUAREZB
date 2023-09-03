@@ -107,4 +107,47 @@
    cursor:pointer;
    transition:all 2s;
   }
+  .productos{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   div {
+    margin: 5px auto;
+     img {
+         width: 80%;
+         height: 200px;
+         padding: 20px;
+          &:hover{
+            font-weight: lighter;
+            padding:1.1px;
+            color: $principalColor 
+          }
+        }
+        p{   
+         font-family:$mainFont;
+         color:$secondaryColor;
+         margin: 8px 0;
+         font-weight: 1.0em;
+         text-align: center;
+         font-size: 0.9em;
+         }
+         figcaption{   
+         font-family:$mainFont;
+         color:$principalColor;
+         margin: 8px 0;
+         font-weight: 1.0em;
+         text-align: center;
+         font-size: 1.2em;
+         }         
+         button{
+         width: 90%;         
+         font-family:$mainFont;
+         color:$neutroColor;           
+         font-size: 0.9em; 
+         text-align: center;                                      
+         }
+    }
+}
 }

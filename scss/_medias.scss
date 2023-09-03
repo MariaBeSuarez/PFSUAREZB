@@ -49,37 +49,6 @@
          }
       }
    }
-   .productos{
-     display: inline-block;
-     flex-direction: row;
-     justify-content: space-around;
-      div {
-         margin: 5px auto;
-         img {
-           width: 75%;
-           border: none;           
-           &:hover{
-             font-weight: lighter;
-             padding:1.5px;
-             color: $principalColor 
-            } 
-           figcaption{   
-             font-family:$mainFont;
-             color:$principalColor;
-             margin: 5px 0;
-             font-weight: 0.8em;
-             text-align: center;
-             font-size: 0.8em;
-            } 
-         }
-         button{
-          width: 90%;         
-          font-family:$mainFont;
-          color:$neutroColor;           
-          font-size: 0.7em;                                       
-         }
-      }
-   } 
 }     
 @media (max-width: 600px){
   .logos {

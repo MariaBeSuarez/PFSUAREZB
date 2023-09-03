@@ -59,9 +59,11 @@ p {
 }
 
 .productos {
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .productos div {
   margin: 5px auto;
@@ -257,37 +259,6 @@ button {
     font-weight: lighter;
     padding: 1.5px;
     color: rgba(128, 128, 128, 0.615);
-  }
-  .productos {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .productos div {
-    margin: 5px auto;
-  }
-  .productos div img {
-    width: 75%;
-    border: none;
-  }
-  .productos div img:hover {
-    font-weight: lighter;
-    padding: 1.5px;
-    color: rgb(205, 14, 205);
-  }
-  .productos div img figcaption {
-    font-family: "Quicksand", sans-serif;
-    color: rgb(205, 14, 205);
-    margin: 5px 0;
-    font-weight: 0.8em;
-    text-align: center;
-    font-size: 0.8em;
-  }
-  .productos div button {
-    width: 90%;
-    font-family: "Quicksand", sans-serif;
-    color: rgba(128, 128, 128, 0.615);
-    font-size: 0.7em;
   }
 }
 @media (max-width: 600px) {
@@ -528,6 +499,49 @@ button {
   transform: scaleX(1.4);
   cursor: pointer;
   transition: all 2s;
+}
+* .productos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+* .productos div {
+  margin: 5px auto;
+}
+* .productos div img {
+  width: 80%;
+  height: 200px;
+  padding: 20px;
+}
+* .productos div img:hover {
+  font-weight: lighter;
+  padding: 1.1px;
+  color: rgb(205, 14, 205);
+}
+* .productos div p {
+  font-family: "Quicksand", sans-serif;
+  color: deeppink;
+  margin: 8px 0;
+  font-weight: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+* .productos div figcaption {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(205, 14, 205);
+  margin: 8px 0;
+  font-weight: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+* .productos div button {
+  width: 90%;
+  font-family: "Quicksand", sans-serif;
+  color: rgba(128, 128, 128, 0.615);
+  font-size: 0.9em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
